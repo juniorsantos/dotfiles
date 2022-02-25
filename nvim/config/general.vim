@@ -20,7 +20,7 @@ set splitbelow
 set splitright
 set termguicolors
 set signcolumn=yes:1
-set timeoutlen=300
+set timeoutlen=1000
 set updatetime=300
 set lazyredraw
 set cursorline
