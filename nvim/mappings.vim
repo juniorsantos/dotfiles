@@ -17,7 +17,6 @@ nnoremap <leader>fb <cmd>lua require('telescope.builtin').buffers()<cr>
 nnoremap <leader>fh <cmd>lua require('telescope.builtin').help_tags()<cr>
 nnoremap <leader>app <cmd>lua require('telescope.builtin').lsp_code_actions(require('telescope.themes').get_cursor())<cr>
 
-nnoremap <leader>s <cmd>:w<cr>
 nnoremap <leader>2 <cmd>:tabnew<cr>
 nnoremap <leader>w <cmd>:bd<cr>
 nnoremap <leader>git <cmd>:FloatermNew lazygit<cr>
@@ -31,6 +30,43 @@ nnoremap <leader>mx :e ~/.dotfiles/tmux/.tmux.conf<cr>
 
 nnoremap <leader><Right> :bn<CR>
 nnoremap <leader><Left> :bp<CR>
+
+" Vertical split
+nmap <silent> <Leader>v :vsplit<CR>
+
+" Comentar linhas usando <leader> + /
+nnoremap <C-_> :Commentary<cr>
+vnoremap <C-_> :Commentary<cr>
+
+" Define o atalho Shift + Meta(Alt) + P para utilizar o fzf 
+nnoremap <s-m-p> :Files<cr>
+
+" Define o atalho Ctrl + P para utilizar o fzf com base no git
+nnoremap <c-p> :GFiles<cr>
+
+" Salvar usando CTRL + S
+nmap <c-s> :w<cr>
+imap <c-s> <Esc>:w<cr>a
+
+" Abrir o todo list 
+nmap <F5> :TODOToggle<CR>
+
+" Mover linha ou bloco de linhas pra cima e pra baixo (Shift+Alt+j e Shift+Alt+k)
+nnoremap <S-A-j> :m .+1<CR>==
+nnoremap <S-A-k> :m .-2<CR>==
+inoremap <S-A-j> <Esc>:m .+1<CR>==gi
+inoremap <S-A-k> <Esc>:m .-2<CR>==gi
+vnoremap <S-A-j> :m '>+1<CR>gv=gv
+vnoremap <S-A-k> :m '<-2<CR>gv=gv
+
+" Debugger
+" Mappings: vdebug
+nnoremap <Leader>B :Breakpoint<CR>
+nnoremap <Leader>V :VdebugStart<CR>
+
+" PHP docblock generation
+" Mappings: pdv
+autocmd FileType php nnoremap <buffer> <Leader>pd :call pdv#DocumentWithSnip()<CR>
 
 " Mappings:floaterm
 let g:floaterm_keymap_new    = '<F7>'
