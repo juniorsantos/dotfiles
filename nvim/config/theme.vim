@@ -33,7 +33,7 @@ augroup END
 
 " -------------------------------------- Color Scheme --------------------------------- "                                  
 
-colorscheme iceberg
+colorscheme inspired-github
 
 " --------------------------------- Carbon Theme Overrides ---------------------------- "                                  
 

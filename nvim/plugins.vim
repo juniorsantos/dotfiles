@@ -104,7 +104,9 @@
     
     "Carbon Theme
     Plug 'michaeldyrynda/carbon'
-
+    
+    Plug 'mvpopuk/inspired-github.vim'
+    
     " Indent Guides
     Plug 'lukas-reineke/indent-blankline.nvim'
     

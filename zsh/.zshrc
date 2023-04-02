@@ -1,5 +1,5 @@
 # If you come from bash you might have to change your $PATH.
-# export PATH=$HOME/bin:/usr/local/bin:$PATH
+#export PATH=$HOME/bin:/usr/local/bin:$PATH
 
 #SHELL=/usr/bin/zsh TMUX
 
@@ -10,7 +10,9 @@ export ZSH="/Users/jsjunior/.oh-my-zsh"
 # load a random theme each time oh-my-zsh is loaded, in which case,
 # to know which specific one was loaded, run: echo $RANDOM_THEME
 # See https://github.com/ohmyzsh/ohmyzsh/wiki/Themes
-ZSH_THEME="spaceship"
+#ZSH_THEME="spaceship"
+ZSH_THEME="robbyrussell"
+#ZSH_THEME="agnoster"
 
 # Set list of themes to pick from when loading at random
 # Setting this variable when ZSH_THEME=random will cause zsh to load
@@ -114,7 +116,7 @@ export NVM_DIR="/Users/mvpop/.nvm"
 
 # Set Spaceship ZSH as a prompt
 ##autoload -U promptinit; promptinit
-##prompt spaceship
+#prompt spaceship
 
 export PATH="$HOME/.composer/vendor/bin:$PATH"
 export PATH="/usr/local/sbin:$PATH"
