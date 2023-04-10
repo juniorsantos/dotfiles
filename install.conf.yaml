@@ -10,15 +10,18 @@
 
 - link:
     ~/.gitconfig: git/.gitconfig
+    ~/PHPStorm-Portugue-Brazil-Dictionary: PHPStorm-Portuguese-Brazil-Dictionary
     ~/.zshrc: zsh/.zshrc
+    ~/.config/yabai/yabairc: yabai/yabairc
+    ~/.config/skhd/skhdrc: skhd/skhdrc
     ~/.config/nvim/init.vim: nvim/init.vim
     ~/.config/kitty: kitty
-    ~/.tmux/mvpop_statusbar.tmux.conf: tmux/mvpop_statusbar.tmux.conf
+    ~/.tmux/statusbar.tmux.conf: tmux/statusbar.tmux.conf
     ~/.tmux.conf: tmux/.tmux.conf
     ~/.composer/composer.json: composer/composer.json
 
 - create:
-    - ~/Documents/Projects
+    - ~/Code
     - ~/.config/nvim/undo
 
 - shell:
