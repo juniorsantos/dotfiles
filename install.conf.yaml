@@ -11,6 +11,7 @@
 - link:
     ~/.gitconfig: git/.gitconfig
     ~/PHPStorm-Portugue-Brazil-Dictionary: PHPStorm-Portuguese-Brazil-Dictionary
+    ~/iterm2: iterm2
     ~/.zshrc: zsh/.zshrc
     ~/.config/yabai/yabairc: yabai/yabairc
     ~/.config/skhd/skhdrc: skhd/skhdrc
