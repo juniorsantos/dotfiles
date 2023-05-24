@@ -1,5 +1,6 @@
 # Path to your oh-my-zsh installation.
 export ZSH="$HOME/.oh-my-zsh"
+export DOCKER_DEFAULT_PLATFORM=linux/amd64
 
 ZSH_THEME="robbyrussell"
 
@@ -11,5 +12,8 @@ prompt_context() {}
 prompt_dir() {
   prompt_segment blue black '%3~'
 }
+
+export NVM_DIR=~/.nvm
+source $(brew --prefix nvm)/nvm.sh
 
 cd ~/Code
